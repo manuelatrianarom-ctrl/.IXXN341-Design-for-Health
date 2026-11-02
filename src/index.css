@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Pantone Brand Palette ─────────────────────────────────── */
+  --color-cream: #E9DECE;          /* Pantone P 17-1 C warm beige (dominant background) */
+  --color-indigo: #1E2760;         /* Pantone P 102-8 C deep indigo (structural color) */
+  --color-lime: #ADCC16;           /* Pantone P 163-8 C lime (saturated accent) */
+
+  /* ── 3 Derived Pastels + Surfaces ──────────────────────────── */
+  --color-pastel-indigo: #DDE2F5;   /* derived soft indigo tint */
+  --color-pastel-lime: #EBF5C5;     /* derived soft lime tint */
+  --color-pastel-warm: #F4EFE6;     /* derived warm neutral tint */
+  --color-card: #FAF7F2;            /* flat solid card background */
+  --color-border: #D4C9B6;          /* warm border divider */
+
+  /* ── Typography & Text ─────────────────────────────────────── */
+  --color-text: #1E2760;            /* primary text: indigo */
+  --color-muted: #6B6052;           /* secondary text: warm brown-gray */
+
+  /* ── Legacy Aliases ────────────────────────────────────────── */
+  --color-sage: #1E2760;
+  --color-sage-light: #DDE2F5;
+  --color-sage-dark: #1E2760;
+  --color-blush: #D4C9B6;
+  --color-warm-brown: #6B6052;
+
+  --font-display: 'P22 Mackinac', Lora, Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --color-cream: #E9DECE;
+  --color-indigo: #1E2760;
+  --color-lime: #ADCC16;
+
+  --color-pastel-indigo: #DDE2F5;
+  --color-pastel-lime: #EBF5C5;
+  --color-pastel-warm: #F4EFE6;
+  --color-card: #FAF7F2;
+  --color-border: #D4C9B6;
+
+  --color-text: #1E2760;
+  --color-muted: #6B6052;
+
+  --color-sage: #1E2760;
+  --color-sage-light: #DDE2F5;
+  --color-sage-dark: #1E2760;
+  --color-blush: #D4C9B6;
+  --color-warm-brown: #6B6052;
+
+  --font-display: 'P22 Mackinac', Lora, Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html, body, #root {
+  min-height: 100%;
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
+
+.font-display { font-family: var(--font-display); }

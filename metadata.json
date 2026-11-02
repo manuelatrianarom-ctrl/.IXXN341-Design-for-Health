@@ -1,0 +1,6 @@
+{
+  "name": "Standing By",
+  "description": "Herramientas, orientación y acompañamiento para padres y cuidadores de adolescentes con ansiedad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
