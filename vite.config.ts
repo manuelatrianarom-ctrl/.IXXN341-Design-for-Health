@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/.IXXN341-Design-for-Health/',
+    base: process.env.ITCHIO_BUILD === 'true' ? './' : '/.IXXN341-Design-for-Health/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
