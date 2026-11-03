@@ -7,7 +7,7 @@ export function BrandLogo({ size = "sm" }: { size?: "sm" | "lg" }) {
   const widthClass = size === "lg" ? "w-44" : "w-28";
   return (
     <img
-      src="/assets/aistudio/Asset_2_b25f92c6.png"
+      src={`${import.meta.env.BASE_URL}assets/aistudio/Asset_2_b25f92c6.png`}
       alt="Standing By"
       referrerPolicy="no-referrer"
       className={`${widthClass} aspect-[842/260] object-cover object-top select-none shrink-0 [filter:url(#standing-by-indigo)]`}
